@@ -31,9 +31,9 @@ echo "Compiling CBC_Camera..."
 $COMPILER ${CBC_CAMERA}.c
 echo "Compiling CBC_Create..."
 $COMPILER ${CBC_CREATE}.c
-echo "Compiling CBC_ARDrone..."
+echo "Compiling CBC_Drone..."
 $COMPILER ${CBC_DRONE}.c
-
 echo "Linking wrapper..."
-$LINKER ${CBC_DEVICE}.o ${CBC_DISPLAY}.o ${CBC_INPUT}.o ${CBC_MOTOR}.o ${CBC_SENSOR}.o ${CBC_SERVO}.o ${CBC_SOUND}.o ${CBC_CAMERA}.o ${CBC_CREATE}.o ${CBC_DRONE}.o 
+$LINKER ${CBC_DEVICE}.o ${CBC_DISPLAY}.o ${CBC_INPUT}.o ${CBC_MOTOR}.o ${CBC_SENSOR}.o ${CBC_SERVO}.o ${CBC_SOUND}.o ${CBC_CAMERA}.o ${CBC_CREATE}.o ${CBC_DRONE}.o
 echo "Generated CBC.so!"
+

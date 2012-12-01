@@ -26,5 +26,6 @@ rm -Rf /mnt/user/jvm/cbc/jni
 echo "[INSTALL] Remounting..."
 mount -o remount,rw /dev/sda2
 cd /mnt/user
+cp /mnt/user/jvm/cbc/CBC.so /mnt/kiss/jvm/cbc
 echo "[INSTALL] CBCJVM Installed!"
 echo "Please run the HelloWorld Program to verify."

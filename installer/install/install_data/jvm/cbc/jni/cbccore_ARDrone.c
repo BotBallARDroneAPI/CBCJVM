@@ -1,5 +1,6 @@
 
-#include "ARDrone.h"
+#include "cbccore_ARDrone.h"
+#include <ARDroneAPI.h>
 
 /*
  * Class:     Drone
@@ -105,7 +106,7 @@ JNIEXPORT jfloat JNICALL Java_cbccore_ARDrone_get_1x_1velocity(JNIEnv * env, job
  * Method:    get_y_velocity
  * Signature: ()F
  */
-JNIEXPORT jfloat JNICALL Java_cbccore_ARDrone_get_1y_1velocity(JNIEnv *, jobject){
+JNIEXPORT jfloat JNICALL Java_cbccore_ARDrone_get_1y_1velocity(JNIEnv * env, jobject obj){
     jfloat returnme =  drone_get_y_velocity();
     return returnme;
 }

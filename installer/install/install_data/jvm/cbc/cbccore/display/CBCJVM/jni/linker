@@ -1,0 +1,5 @@
+#!/bin/sh
+/mnt/kiss/gcc/bin/gcc -shared -Wl,--whole-archive -L/mnt/kiss/usercode/lib -lcbc -ltrack -lshared /mnt/kiss/usercode/lib/libcommonc++.so.10 /mnt/kiss/usercode/lib/init.o -lpthread -lm -Wl,--no-whole-archive -o CBC.so $@
+
+sync
+sync
